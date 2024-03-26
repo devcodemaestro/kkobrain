@@ -17,6 +17,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           name="naver-site-verification"
           content="dc2618b11b331c780132c9c7f87e05b649942f6e"
         />
+        <link
+          rel="canonical"
+          href="https://clone-kkobrain-codemaestro.vercel.app/"
+        ></link>
       </head>
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
