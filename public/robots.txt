@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://clone-kkobrain-codemaestro.vercel.app
+
+# Sitemaps
+Sitemap: https://clone-kkobrain-codemaestro.vercel.app/sitemap.xml
