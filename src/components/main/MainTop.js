@@ -7,7 +7,7 @@ import "swiper/css/autoplay";
 
 export const MainTop = () => {
   const path = "./images";
-  const [bannerList, setBannerList] = useState([]);
+  const [banneerList, setBannerList] = useState([]);
   // 마우스 오버가 되면 play 하기
   const swBanner = useRef(null);
   const handelMouseEnterBanner = () => {
@@ -15,7 +15,6 @@ export const MainTop = () => {
       swBanner.current.swiper.autoplay.stop();
     }
   };
-
   const handelMouseLeaveBanner = () => {
     if (swBanner.current.swiper) {
       swBanner.current.swiper.autoplay.start();
@@ -26,18 +25,15 @@ export const MainTop = () => {
     const jsonUrl = "./api/banner.json";
     fetch(jsonUrl)
       .then((res) => {
-        // console.log(res);
         return res.json();
       })
       .then((data) => {
-        // console.log(data);
         setBannerList(data);
       })
       .catch((err) => {
         console.log(err);
       });
   };
-
   useEffect(() => {
     getBannerList();
   }, []);
@@ -65,7 +61,7 @@ export const MainTop = () => {
               handelMouseLeaveBanner();
             }}
           >
-            {bannerList.map((item) => {
+            {banneerList.map((item) => {
               return (
                 <SwiperSlide key={item.id}>
                   <div
