@@ -21,6 +21,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           rel="canonical"
           href="https://clone-kkobrain-codemaestro.vercel.app/"
         ></link>
+
+        <meta
+          name="google-site-verification"
+          content="0tuJ7K50U_mGcEBcf3PKbphkCSUPy2x2wpc5Cf1GK1o"
+        />
       </head>
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
